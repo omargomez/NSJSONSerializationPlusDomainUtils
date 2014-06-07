@@ -18,7 +18,6 @@
 		8265F0DB1937577400B4AD7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8265F0D91937577400B4AD7C /* InfoPlist.strings */; };
 		8265F0DD1937577400B4AD7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265F0DC1937577400B4AD7C /* main.m */; };
 		8265F0E11937577400B4AD7C /* PCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265F0E01937577400B4AD7C /* PCAppDelegate.m */; };
-		8265F0E71937577400B4AD7C /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265F0E61937577400B4AD7C /* PCViewController.m */; };
 		8265F0E91937577400B4AD7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8265F0E81937577400B4AD7C /* Images.xcassets */; };
 		8265F0F01937577400B4AD7C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8265F0EF1937577400B4AD7C /* XCTest.framework */; };
 		8265F0F11937577400B4AD7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8265F0D01937577400B4AD7C /* Foundation.framework */; };
@@ -66,8 +65,6 @@
 		8265F0DE1937577400B4AD7C /* PPOCMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPOCMobile-Prefix.pch"; sourceTree = "<group>"; };
 		8265F0DF1937577400B4AD7C /* PCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCAppDelegate.h; sourceTree = "<group>"; };
 		8265F0E01937577400B4AD7C /* PCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCAppDelegate.m; sourceTree = "<group>"; };
-		8265F0E51937577400B4AD7C /* PCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
-		8265F0E61937577400B4AD7C /* PCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
 		8265F0E81937577400B4AD7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8265F0EE1937577400B4AD7C /* PPOCMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPOCMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8265F0EF1937577400B4AD7C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -159,8 +156,6 @@
 				8292EC611938B2CC002F3321 /* img */,
 				8265F0DF1937577400B4AD7C /* PCAppDelegate.h */,
 				8265F0E01937577400B4AD7C /* PCAppDelegate.m */,
-				8265F0E51937577400B4AD7C /* PCViewController.h */,
-				8265F0E61937577400B4AD7C /* PCViewController.m */,
 				8265F0E81937577400B4AD7C /* Images.xcassets */,
 				8265F0D71937577400B4AD7C /* Supporting Files */,
 				820439BB193C19BF0047C145 /* POCMobile.storyboard */,
@@ -345,7 +340,6 @@
 				8265F110193761E800B4AD7C /* PCHomeModel.m in Sources */,
 				8289C050193948A5009573DC /* PCSearchItem.m in Sources */,
 				820439C5193D1BAB0047C145 /* PCItemModel.m in Sources */,
-				8265F0E71937577400B4AD7C /* PCViewController.m in Sources */,
 				8289C04C193944F5009573DC /* PCSearchModel.m in Sources */,
 				8289C0491939433A009573DC /* PCCollectionController.m in Sources */,
 				8265F0E11937577400B4AD7C /* PCAppDelegate.m in Sources */,
