@@ -41,5 +41,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>CFBundleIconFiles</key>
+    <array>
+        <string>opensource29.png</string>
+        <string>opensource57.png</string>
+        <string>opensource58.png</string>
+        <string>opensource80.png</string>
+        <string>opensource114.png</string>
+        <string>opensource120.png</string>
+    </array>
 </dict>
 </plist>

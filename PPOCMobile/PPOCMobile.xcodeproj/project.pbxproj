@@ -35,6 +35,12 @@
 		8292EC641938B2CC002F3321 /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8292EC621938B2CC002F3321 /* thumb.png */; };
 		8292EC651938B2CC002F3321 /* thumb_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 8292EC631938B2CC002F3321 /* thumb_large.png */; };
 		8292EC681938B424002F3321 /* PCHomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8292EC671938B424002F3321 /* PCHomeViewCell.m */; };
+		82F30C971943EEA0002D5C18 /* opensource29.png in Resources */ = {isa = PBXBuildFile; fileRef = 82F30C911943EEA0002D5C18 /* opensource29.png */; };
+		82F30C981943EEA0002D5C18 /* opensource57.png in Resources */ = {isa = PBXBuildFile; fileRef = 82F30C921943EEA0002D5C18 /* opensource57.png */; };
+		82F30C991943EEA0002D5C18 /* opensource58.png in Resources */ = {isa = PBXBuildFile; fileRef = 82F30C931943EEA0002D5C18 /* opensource58.png */; };
+		82F30C9A1943EEA0002D5C18 /* opensource80.png in Resources */ = {isa = PBXBuildFile; fileRef = 82F30C941943EEA0002D5C18 /* opensource80.png */; };
+		82F30C9B1943EEA0002D5C18 /* opensource114.png in Resources */ = {isa = PBXBuildFile; fileRef = 82F30C951943EEA0002D5C18 /* opensource114.png */; };
+		82F30C9C1943EEA0002D5C18 /* opensource120.png in Resources */ = {isa = PBXBuildFile; fileRef = 82F30C961943EEA0002D5C18 /* opensource120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +96,12 @@
 		8292EC631938B2CC002F3321 /* thumb_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb_large.png; sourceTree = "<group>"; };
 		8292EC661938B424002F3321 /* PCHomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHomeViewCell.h; sourceTree = "<group>"; };
 		8292EC671938B424002F3321 /* PCHomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHomeViewCell.m; sourceTree = "<group>"; };
+		82F30C911943EEA0002D5C18 /* opensource29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opensource29.png; sourceTree = "<group>"; };
+		82F30C921943EEA0002D5C18 /* opensource57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opensource57.png; sourceTree = "<group>"; };
+		82F30C931943EEA0002D5C18 /* opensource58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opensource58.png; sourceTree = "<group>"; };
+		82F30C941943EEA0002D5C18 /* opensource80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opensource80.png; sourceTree = "<group>"; };
+		82F30C951943EEA0002D5C18 /* opensource114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opensource114.png; sourceTree = "<group>"; };
+		82F30C961943EEA0002D5C18 /* opensource120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opensource120.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +232,12 @@
 		8292EC611938B2CC002F3321 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				82F30C911943EEA0002D5C18 /* opensource29.png */,
+				82F30C921943EEA0002D5C18 /* opensource57.png */,
+				82F30C931943EEA0002D5C18 /* opensource58.png */,
+				82F30C941943EEA0002D5C18 /* opensource80.png */,
+				82F30C951943EEA0002D5C18 /* opensource114.png */,
+				82F30C961943EEA0002D5C18 /* opensource120.png */,
 				820439B7193C0FFA0047C145 /* placeholder_item.png */,
 				820439B5193BFD2D0047C145 /* placeholder_home_large.png */,
 				8289C05119394CB6009573DC /* thumb_item.jpg */,
@@ -308,11 +326,17 @@
 			files = (
 				820439B8193C0FFA0047C145 /* placeholder_item.png in Resources */,
 				820439B6193BFD2D0047C145 /* placeholder_home_large.png in Resources */,
+				82F30C9A1943EEA0002D5C18 /* opensource80.png in Resources */,
+				82F30C981943EEA0002D5C18 /* opensource57.png in Resources */,
+				82F30C991943EEA0002D5C18 /* opensource58.png in Resources */,
 				8292EC651938B2CC002F3321 /* thumb_large.png in Resources */,
 				8289C05219394CB6009573DC /* thumb_item.jpg in Resources */,
+				82F30C9B1943EEA0002D5C18 /* opensource114.png in Resources */,
 				8292EC641938B2CC002F3321 /* thumb.png in Resources */,
+				82F30C971943EEA0002D5C18 /* opensource29.png in Resources */,
 				8265F0E91937577400B4AD7C /* Images.xcassets in Resources */,
 				820439B9193C19BF0047C145 /* POCMobile.storyboard in Resources */,
+				82F30C9C1943EEA0002D5C18 /* opensource120.png in Resources */,
 				8265F0DB1937577400B4AD7C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,7 +491,6 @@
 		8265F1001937577400B4AD7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PPOCMobile/PPOCMobile-Prefix.pch";
@@ -491,7 +514,6 @@
 		8265F1011937577400B4AD7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PPOCMobile/PPOCMobile-Prefix.pch";
