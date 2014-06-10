@@ -18,6 +18,10 @@
 		82EDC3CC1934BA6A0083D11A /* NSJSONSerialization+DomainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC3C91934B9B80083D11A /* NSJSONSerialization+DomainUtils.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		82EDC3D01934C78E0083D11A /* ModelResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC3CF1934C78E0083D11A /* ModelResource.m */; };
 		82EDC3D31934C7F10083D11A /* ModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC3D21934C7F10083D11A /* ModelItem.m */; };
+		82F30CA5194735E5002D5C18 /* ModelMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F30CA4194735E5002D5C18 /* ModelMenu.m */; };
+		82F30CA8194735FA002D5C18 /* ModelPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F30CA7194735FA002D5C18 /* ModelPopup.m */; };
+		82F30CAB19473613002D5C18 /* ModelMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F30CAA19473613002D5C18 /* ModelMenuItem.m */; };
+		82F30CAE19473834002D5C18 /* ModelMenuRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F30CAD19473834002D5C18 /* ModelMenuRoot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,14 @@
 		82EDC3CF1934C78E0083D11A /* ModelResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelResource.m; sourceTree = "<group>"; };
 		82EDC3D11934C7F10083D11A /* ModelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelItem.h; sourceTree = "<group>"; };
 		82EDC3D21934C7F10083D11A /* ModelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelItem.m; sourceTree = "<group>"; };
+		82F30CA3194735E5002D5C18 /* ModelMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelMenu.h; sourceTree = "<group>"; };
+		82F30CA4194735E5002D5C18 /* ModelMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelMenu.m; sourceTree = "<group>"; };
+		82F30CA6194735FA002D5C18 /* ModelPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelPopup.h; sourceTree = "<group>"; };
+		82F30CA7194735FA002D5C18 /* ModelPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelPopup.m; sourceTree = "<group>"; };
+		82F30CA919473613002D5C18 /* ModelMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelMenuItem.h; sourceTree = "<group>"; };
+		82F30CAA19473613002D5C18 /* ModelMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelMenuItem.m; sourceTree = "<group>"; };
+		82F30CAC19473834002D5C18 /* ModelMenuRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelMenuRoot.h; sourceTree = "<group>"; };
+		82F30CAD19473834002D5C18 /* ModelMenuRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelMenuRoot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +151,14 @@
 				82EDC3CF1934C78E0083D11A /* ModelResource.m */,
 				82EDC3D11934C7F10083D11A /* ModelItem.h */,
 				82EDC3D21934C7F10083D11A /* ModelItem.m */,
+				82F30CA3194735E5002D5C18 /* ModelMenu.h */,
+				82F30CA4194735E5002D5C18 /* ModelMenu.m */,
+				82F30CA6194735FA002D5C18 /* ModelPopup.h */,
+				82F30CA7194735FA002D5C18 /* ModelPopup.m */,
+				82F30CA919473613002D5C18 /* ModelMenuItem.h */,
+				82F30CAA19473613002D5C18 /* ModelMenuItem.m */,
+				82F30CAC19473834002D5C18 /* ModelMenuRoot.h */,
+				82F30CAD19473834002D5C18 /* ModelMenuRoot.m */,
 			);
 			path = NSJSONSerializationPlusDomainUtilsTests;
 			sourceTree = "<group>";
@@ -241,10 +261,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F30CA5194735E5002D5C18 /* ModelMenu.m in Sources */,
 				82EDC3CC1934BA6A0083D11A /* NSJSONSerialization+DomainUtils.m in Sources */,
+				82F30CA8194735FA002D5C18 /* ModelPopup.m in Sources */,
 				82EDC3C01934B8AB0083D11A /* NSJSONSerializationPlusDomainUtilsTests.m in Sources */,
+				82F30CAE19473834002D5C18 /* ModelMenuRoot.m in Sources */,
 				82EDC3D31934C7F10083D11A /* ModelItem.m in Sources */,
 				82EDC3D01934C78E0083D11A /* ModelResource.m in Sources */,
+				82F30CAB19473613002D5C18 /* ModelMenuItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

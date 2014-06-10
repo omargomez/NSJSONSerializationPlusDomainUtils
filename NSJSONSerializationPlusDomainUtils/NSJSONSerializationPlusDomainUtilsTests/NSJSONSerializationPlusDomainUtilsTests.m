@@ -10,6 +10,10 @@
 #import "NSJSONSerialization+DomainUtils.h"
 #import "ModelResource.h"
 #import "ModelItem.h"
+#import "ModelMenuRoot.h"
+#import "ModelMenu.h"
+#import "ModelPopup.h"
+#import "ModelMenuItem.h"
 
 @interface NSJSONSerializationPlusDomainUtilsTests : XCTestCase
 
@@ -36,21 +40,13 @@
     XCTAssertNotNil(inputData, @"Nil response");
     
     NSError *error = nil;
-    id outSchema = [NSJSONSerialization ModelObjectWithData:inputData
-                                                    options:0 error:&error
-                                                  buildStep:
-    ^Class ( NSString *path, NSDictionary *dict ) {
-        
-        if ([path isEqualToString:@"$"]) {
-            return [ModelResource class];
-        }
-        else if ([path isEqualToString:@"$.item"]) {
-            return [ModelItem class];
-        }
-        
-        return nil;
-        
-    }];
+    
+    NSDictionary *map = @{
+                          @"$": [ModelResource class],
+                          @"$.item": [ModelItem class]
+                          };
+    
+    id outSchema = [NSJSONSerialization ModelObjectWithData:inputData options:0 suffixMap:map error:&error];
     
     XCTAssertNotNil(outSchema, @"Nil response");
     XCTAssertEqual([outSchema class], [ModelResource class], @"It's not a model class");
@@ -61,6 +57,41 @@
     XCTAssertEqual([resource.item class], [ModelItem class], @"It's not a model class");
     
     ModelItem *item = (ModelItem*) resource.item;
+}
+
+-(void) testDoc
+{
+    const char *json =
+    "{\"menu\": {"
+    "    \"id\": \"file\","
+    "    \"value\": \"File\","
+    "    \"popup\": {"
+    "        \"menuitem\": ["
+    "                     {\"value\": \"New\", \"onclick\": \"CreateNewDoc()\"},"
+    "                     {\"value\": \"Open\", \"onclick\": \"OpenDoc()\"},"
+    "                     {\"value\": \"Close\", \"onclick\": \"CloseDoc()\"}"
+    "                     ]"
+    "    }"
+    "}}" ;
+    
+    id data = [NSData dataWithBytes:json length:strlen(json)];
+    
+    NSError *error;
+    NSDictionary *map =@{
+                         @"$": [ModelMenuRoot class],
+                         @".menu": [ModelMenu class],
+                         @".popup": [ModelPopup class],
+                         @".menuitem[]": [ModelMenuItem class],
+                         };
+    ModelMenuRoot *root =[NSJSONSerialization ModelObjectWithData: data
+                                                      options:0
+                                                    suffixMap:map
+                                                        error:&error];
+    
+    XCTAssertNotNil(root, @"Nil response");
+    XCTAssertEqualObjects([root.menu.popup.menuitem[1] value], @"Open", @"");
+    NSLog(@"%@", [root.menu.popup.menuitem[1] value] );
+    
 }
 
 @end

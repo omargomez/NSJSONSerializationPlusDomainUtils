@@ -13,7 +13,3 @@
 +(id)ModelObjectWithData:(NSData *)data options:(NSJSONReadingOptions)opt suffixMap:(NSDictionary*) pathClassMap error:(NSError **)error;
 
 @end
-
-@interface NSObject (DomainUtils)
-
-@end
