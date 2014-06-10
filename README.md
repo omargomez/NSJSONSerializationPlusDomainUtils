@@ -110,7 +110,7 @@ Just because I'm amazing I created a mobile version of the Libray of Congress' "
 
 ## Sharing
 
-<a href="https://twitter.com/share?text=Map JSON to model classes #NSJSONSerializationPlusDomainUtils" class="twitter-share-button" data-lang="en">Tweet to share</a>
+<a href="https://twitter.com/share?text=Map JSON to model classes in Objective-C$hashtags=NSJSONSerializationPlusDomainUtils" class="twitter-share-button" data-lang="en">Tweet to share</a>
 
 
 
